@@ -1,0 +1,62 @@
+﻿@model List<MeilleursChronosVM>
+<div class="container">
+    <h2>Meilleurs chronos dans des parties solo</h2>
+    <div class="row justify-content-center">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- Pseudo du joueur -->
+                            Joueur
+                        </th>
+                        <th>
+                            <!-- Nom de la course -->
+                            Course
+                        </th>
+                        <th>
+                            <!-- Position -->
+                            Position
+                        </th>
+                        <th>
+                            <!-- Chrono -->
+                            Chrono
+                        </th>
+                        <th>
+                            <!-- Date de la participation -->
+                            Date
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                     @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            <!-- Pseudo du joueur -->
+                            @item.Pseudo
+                        </td>
+                        <td>
+                            <!-- Nom de la course -->
+                            @item.NomCourse
+                        </td>
+                        <td>
+                            <!-- Position -->
+                            @item.Position
+                        </td>
+                        <td>
+                            <!-- Chrono -->
+                            @item.Chrono
+                        </td>
+                        <td>
+                            <!-- Date de la participation -->
+                            @item.Date
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

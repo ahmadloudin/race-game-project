@@ -1,0 +1,39 @@
+﻿@model List<NbParticipationParCoursesVM>
+<div class="container">
+    <h2>Nombre de participations par course</h2>
+    <div class="row justify-content-center">
+        <div class="col">
+            <!-- Affichage des données de la vue -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- Nom de la course -->
+                            Course
+                        </th>
+                        <th>
+                            <!-- Nombre de participations -->
+                            Nombre de participations
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            <!-- Nom de la course -->
+                            @item.Nom
+                        </td>
+                        <td>
+                            <!-- Nombre de participations -->
+                            @item.NbUtilisateurs
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

@@ -1,2 +1,2 @@
 # race-game-project
-Jeu de course codé en JavaScript.
+Jeu de course codé en JavaScript avec plusieurs pages et fonctionnalités
